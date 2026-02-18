@@ -1,0 +1,2 @@
+#记得传参
+$particle dust_color_transition{from_color: [$(random_color_R_from), $(random_color_G_from), $(random_color_B_from)], to_color: [$(random_color_R_to), $(random_color_G_to), $(random_color_B_to)], scale: $(pixel_scale)} ^$(pixel_X) ^$(pixel_Y) ^ $(pixel_size) $(pixel_size) $(pixel_size) 0 100 force
