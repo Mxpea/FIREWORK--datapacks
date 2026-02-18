@@ -1,4 +1,4 @@
-
+function firework:effects/rainbow_color_gen
 execute unless score start firework_settings matches 1..2 run return fail
 #此处截断
 execute if score start firework_settings matches 1 run scoreboard players set pokopoko firework_discount 4560
@@ -13,3 +13,4 @@ function firework:pokopoko
 execute if score pokopoko firework_discount matches -1 run scoreboard players set pokopoko BPM -1
 execute if score pokopoko firework_discount matches 0.. run scoreboard players remove pokopoko BPM 1
 execute if score pokopoko firework_discount matches 0.. run scoreboard players remove pokopoko firework_discount 1
+
