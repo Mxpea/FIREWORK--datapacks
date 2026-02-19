@@ -10,6 +10,7 @@
 - 周期性彩虹 & 颜色生成：参见函数 [`firework:tick`](firework/data/firework/function/tick.mcfunction) 与 [`firework:effects/rainbow/rainbow_color_gen`](firework/data/firework/function/effects/rainbow/rainbow_color_gen.mcfunction)。
 - 随机烟花效果生成与召唤：参见 [`firework:run/ran_firework`](firework/data/firework/function/run/ran_firework.mcfunction) 及其子函数（如 [`firework:effects/fireworks_ran/ran_type`](firework/data/firework/function/effects/fireworks_ran/ran_type.mcfunction)）。
 - 粒子与像素字／方块生成：参见像素生成 [`firework:pixel_square/pixel_gen`](firework/data/firework/function/pixel_square/pixel_gen.mcfunction) 与字母集合（示例：[`firework:letters/a`](firework/data/firework/function/letters/a.mcfunction)）。
+- 下落方块彩色效果：参见 [`firework:effects/ran_falling_block/ran_fallingblock_gen`](firework/data/firework/function/effects/ran_falling_block/ran_fallingblock_gen.mcfunction) 以及相关函数 [`fallingblock_summon.mcfunction`](firework/data/firework/function/effects/ran_falling_block/fallingblock_summon.mcfunction) 和 [`colorful_color_gen.mcfunction`](firework/data/firework/function/effects/ran_falling_block/colorful_color_gen.mcfunction)。
 - 坐标/环形排列工具：参见 [`firework:effects/ring/math`](firework/data/firework/function/effects/ring/math.mcfunction) 与 [`firework:effects/ring/poz`](firework/data/firework/function/effects/ring/poz.mcfunction)。
 
 ## 快速使用指南
@@ -36,13 +37,31 @@
 - 烟花生成：[`firework:run/ran_firework`](firework/data/firework/function/run/ran_firework.mcfunction) 与子函数（目录：firework/data/firework/function/effects/fireworks_ran/）
 - 字母/像素：目录 firework/data/firework/function/letters/（示例：[`firework:letters/a`](firework/data/firework/function/letters/a.mcfunction)）与像素生成器 [`firework:pixel_square/pixel_gen`](firework/data/firework/function/pixel_square/pixel_gen.mcfunction)
 
-## 注意与许可
+## 示例命令（快速上手）
 
-- 本仓库包含外部 API 子模块（已在 .gitignore 忽略）：[/.gitignore](.gitignore)。
-- 项目采用 MIT 许可：见 [LICENSE](LICENSE)。
+- 重新加载 datapack：/reload
+- 生成随机烟花：/function firework:run/ran_firework
+- 绘制字母 A：/function firework:letters/a
+- 生成随机颜色 dust：/function firework:effects/ran_dust_gen
+- 生成圆环（示例函数）：/function firework:effects/ring/poz
 
-仓库与开发分支
+## 自定义要点（快速说明）
 
-- 仓库名：FIREWORK--datapacks（分支信息见仓库元信息）。
+- 大多数效果通过 storage: firework:temp 与 scoreboard 控制，修改 firework:load 可改变初始计分板与存储键。
+- 像素字大小与位置由 pixel_square 下的参数与调用位置决定，打开相应函数可调整 pixel_X / pixel_Y 值。
+- 烟花参数（类型、颜色、飞行高度等）在 effects/fireworks_ran 目录下的子函数中定义，可按需修改或新增类型。
+
+## 常见问题
+
+- “/function 无反应”：确认 datapack 已放入 world/datapacks，执行 /reload，并检查 load.json/tick.json 注册是否存在。
+- “颜色/效果不正确”：检查对应 effects/*.mcfunction 中的颜色生成逻辑（random_first_color / random_second_color / rainbow）。
+
+## 贡献与开发
+
+- 欢迎提交 issue 或 PR 请遵循简洁 commit 说明与包含修改说明。
+
+## 许可证
+
+- 项目采用 MIT 许可（见 LICENSE）。
 
 如需定制某个效果或示例命令位置，请指定要修改的函数文件（例如上文列举的某个路径），可直接在对应文件中编辑调用参数或 storage/scoreboard 初始值。
