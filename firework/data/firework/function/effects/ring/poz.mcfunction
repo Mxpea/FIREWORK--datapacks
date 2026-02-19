@@ -7,5 +7,4 @@ $execute as @e[type=armor_stand,tag=center] at @s run summon armor_stand ^ ^ ^$(
 $execute as @e[type=armor_stand,tag=center] at @s run tp @s ~ ~ ~ ~$(angle) ~
 scoreboard players remove steps rings 1
 execute if score steps rings matches 1.. run function firework:effects/ring/poz with storage firework:ring
-execute if score steps rings matches 0 as @e[type=armor_stand,tag=poz] at @s facing entity @e[type=armor_stand,tag=center,sort=nearest,limit=1] feet run tp @s ~ ~ ~
 execute if score steps rings matches 0 run kill @e[type=armor_stand,tag=center]
