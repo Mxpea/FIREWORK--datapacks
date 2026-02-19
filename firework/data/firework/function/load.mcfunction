@@ -1,4 +1,4 @@
-tellraw @a [{"text": "Firework Loaded!   ","color":"green"},{"text": "now it's time!","color":"yellow"}]
+tellraw @a [{"text": "Loaded!   ","color":"green"}]
 
 
 scoreboard objectives add firework_discount dummy
@@ -20,6 +20,7 @@ scoreboard players set 1000 C 1000
 scoreboard players set 6 C 6
 scoreboard players set -1 C -1
 scoreboard players set ran_type temp -1
+scoreboard players set falling_block_type temp 0
 
 stopsound @a record fireworks:music.pokopoko
 data modify storage firework:color tag set value ""

@@ -1,5 +1,6 @@
 function firework:effects/rainbow/rainbow_color_gen
 function firework:tick/rainbow_tail
+function firework:tick/rainbow_fallingblock
 execute unless score start firework_settings matches 1..2 run return fail
 #此处截断
 execute if score start firework_settings matches 1 run scoreboard players set pokopoko firework_discount 4560

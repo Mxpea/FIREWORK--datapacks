@@ -1,0 +1,2 @@
+execute if entity @e[tag=rainbow_block] run function firework:effects/ran_falling_block/colorful_color_gen
+execute as @e[tag=rainbow_block] at @s run function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
