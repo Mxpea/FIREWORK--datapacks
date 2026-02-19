@@ -1,0 +1,1 @@
+execute as @e[tag=rainbow] at @s run function firework:run/rainbow
