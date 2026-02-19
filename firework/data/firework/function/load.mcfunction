@@ -1,5 +1,5 @@
 function firework:letters/extra
-tellraw @a [{"text": "FIREWORK! ","color":"gold",bold: true,italic: true},{"text": "datapack","color":"green"},{"text": " by ","color":"white"},{"text": "Aurelith/Mxpea","color":"yellow"},{"text": " | ","color":"white"},{"text": "[Github]","color":"aqua", click_event:{action: "open_url",url: "https://github.com/Mxpea"}}]
+tellraw @a [{"text": "FIREWORK! ","color":"gold",bold: true,italic: true},{"text": "datapack","color":"green"},{"text": " by ","color":"white"},{"text": "Aurelith/Mxpea","color":"yellow"},{"text": " | ","color":"white"},{"text": "[Github]","color":"aqua", click_event:{action: "open_url",url: "https://github.com/Mxpea/FIREWORK--datapacks"}}]
 
 scoreboard objectives remove temp
 
