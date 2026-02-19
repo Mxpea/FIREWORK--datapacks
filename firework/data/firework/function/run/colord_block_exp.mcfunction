@@ -1,0 +1,33 @@
+#need mmmapi
+data modify storage firework:color tag set value "random_exp"
+
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
+function firework:effects/ran_falling_block/ran_fallingblock_gen
+function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
