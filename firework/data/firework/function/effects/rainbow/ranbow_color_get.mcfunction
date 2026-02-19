@@ -1,6 +1,4 @@
 
-scoreboard players add i rainbow 1000
-execute if score i rainbow matches 32000 run scoreboard players set i rainbow 0
 scoreboard players operation t rainbow = i rainbow
 scoreboard players operation t rainbow /= 31 C
 scoreboard players operation h rainbow = t rainbow
@@ -38,3 +36,7 @@ execute if score n rainbow matches 5 run scoreboard players set R rainbow 1000
 execute if score n rainbow matches 5 run scoreboard players set G rainbow 0
 execute if score n rainbow matches 5 run scoreboard players set B rainbow 1000
 execute if score n rainbow matches 5 run scoreboard players operation B rainbow -= f rainbow
+
+execute store result storage firework:temp rainbow_R double 0.001 run scoreboard players get R rainbow
+execute store result storage firework:temp rainbow_G double 0.001 run scoreboard players get G rainbow
+execute store result storage firework:temp rainbow_B double 0.001 run scoreboard players get B rainbow

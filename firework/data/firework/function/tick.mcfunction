@@ -1,4 +1,4 @@
-function firework:effects/rainbow_color_gen
+function firework:effects/rainbow/rainbow_color_gen
 function firework:tick/rainbow_tail
 execute unless score start firework_settings matches 1..2 run return fail
 #此处截断
