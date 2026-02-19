@@ -1,0 +1,1 @@
+execute store result storage firework:firework_effects color_fade int 1 run random value 0..16777215

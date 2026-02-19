@@ -6,6 +6,7 @@ scoreboard objectives add BPM dummy
 scoreboard objectives add rainbow dummy
 scoreboard objectives add firework_settings trigger
 scoreboard objectives add C dummy
+scoreboard objectives add temp dummy
 
 scoreboard players set pokopoko BPM -1
 scoreboard players set pokopoko firework_discount -1
@@ -18,4 +19,6 @@ scoreboard players set 31 C 31
 scoreboard players set 1000 C 1000
 scoreboard players set 6 C 6
 scoreboard players set -1 C -1
+scoreboard players set ran_type temp -1
+
 stopsound @a record fireworks:music.pokopoko

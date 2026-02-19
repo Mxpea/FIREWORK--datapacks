@@ -1,0 +1,7 @@
+function firework:effects/fireworks_ran/ran_color
+function firework:effects/fireworks_ran/ran_color_fade
+function firework:effects/fireworks_ran/ran_trail
+function firework:effects/fireworks_ran/ran_twinkle
+function firework:effects/fireworks_ran/ran_type
+
+function firework:effects/fireworks_ran/ran_firework_summon with storage firework:firework_effects

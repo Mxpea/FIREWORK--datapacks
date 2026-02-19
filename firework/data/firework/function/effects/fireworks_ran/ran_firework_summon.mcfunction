@@ -1,0 +1,2 @@
+#别忘传参！！！！！！！！！！！！！！！！！！！！！！！！
+$summon minecraft:firework_rocket ~ ~ ~ {FireworksItem:{components:{"minecraft:fireworks":{explosions:[{colors:[$(color)],fade_colors:[$(color_fade)],has_trail:$(trail),has_twinkle:$(twinkle),shape:$(shape)}],flight_duration:1b}},id:"minecraft:firework_rocket"},Life:10,LifeTime:0}
