@@ -22,3 +22,4 @@ scoreboard players set -1 C -1
 scoreboard players set ran_type temp -1
 
 stopsound @a record fireworks:music.pokopoko
+data modify storage firework:color tag set value ""

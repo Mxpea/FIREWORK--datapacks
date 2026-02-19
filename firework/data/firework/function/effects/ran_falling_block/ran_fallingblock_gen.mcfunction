@@ -1,0 +1,18 @@
+execute store result score ran_type temp run random value 1..16
+
+execute if score ran_type temp matches 1 run data modify storage firework:color color set value "white"
+execute if score ran_type temp matches 2 run data modify storage firework:color color set value "light_gray"
+execute if score ran_type temp matches 3 run data modify storage firework:color color set value "gray"
+execute if score ran_type temp matches 4 run data modify storage firework:color color set value "black"
+execute if score ran_type temp matches 5 run data modify storage firework:color color set value "brown"
+execute if score ran_type temp matches 6 run data modify storage firework:color color set value "red"
+execute if score ran_type temp matches 7 run data modify storage firework:color color set value "orange"
+execute if score ran_type temp matches 8 run data modify storage firework:color color set value "yellow"
+execute if score ran_type temp matches 9 run data modify storage firework:color color set value "lime"
+execute if score ran_type temp matches 10 run data modify storage firework:color color set value "green"
+execute if score ran_type temp matches 11 run data modify storage firework:color color set value "cyan"
+execute if score ran_type temp matches 12 run data modify storage firework:color color set value "light_blue"
+execute if score ran_type temp matches 13 run data modify storage firework:color color set value "blue"
+execute if score ran_type temp matches 14 run data modify storage firework:color color set value "purple"
+execute if score ran_type temp matches 15 run data modify storage firework:color color set value "magenta"
+execute if score ran_type temp matches 16 run data modify storage firework:color color set value "pink"
