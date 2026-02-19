@@ -5,11 +5,13 @@ function firework:pixel_square/pixel_gen with storage firework:temp
 data modify storage firework:temp pixel_X set value 4
 function firework:pixel_square/pixel_gen with storage firework:temp
 
-# Row 1 (Y=3): X = 0,1,4
+# Row 1 (Y=3): X = 0,1,3,4
 data modify storage firework:temp pixel_Y set value 3
 data modify storage firework:temp pixel_X set value 0
 function firework:pixel_square/pixel_gen with storage firework:temp
 data modify storage firework:temp pixel_X set value 1
+function firework:pixel_square/pixel_gen with storage firework:temp
+data modify storage firework:temp pixel_X set value 3
 function firework:pixel_square/pixel_gen with storage firework:temp
 data modify storage firework:temp pixel_X set value 4
 function firework:pixel_square/pixel_gen with storage firework:temp
@@ -23,11 +25,9 @@ function firework:pixel_square/pixel_gen with storage firework:temp
 data modify storage firework:temp pixel_X set value 4
 function firework:pixel_square/pixel_gen with storage firework:temp
 
-# Row 3 (Y=1): X = 0,3,4
+# Row 3 (Y=1): X = 0,4
 data modify storage firework:temp pixel_Y set value 1
 data modify storage firework:temp pixel_X set value 0
-function firework:pixel_square/pixel_gen with storage firework:temp
-data modify storage firework:temp pixel_X set value 3
 function firework:pixel_square/pixel_gen with storage firework:temp
 data modify storage firework:temp pixel_X set value 4
 function firework:pixel_square/pixel_gen with storage firework:temp

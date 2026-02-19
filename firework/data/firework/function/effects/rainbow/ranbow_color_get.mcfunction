@@ -1,4 +1,3 @@
-
 scoreboard players operation t rainbow = i rainbow
 scoreboard players operation t rainbow /= 31 C
 scoreboard players operation h rainbow = t rainbow

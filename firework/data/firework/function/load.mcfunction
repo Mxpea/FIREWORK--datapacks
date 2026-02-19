@@ -1,3 +1,4 @@
+function firework:letters/extra
 tellraw @a [{"text": "Loaded!   ","color":"green"}]
 
 
