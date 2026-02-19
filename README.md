@@ -42,8 +42,9 @@
 - 重新加载 datapack：/reload
 - 生成随机烟花：/function firework:run/ran_firework
 - 绘制字母 A：/function firework:letters/a
-- 生成随机颜色 dust：/function firework:effects/ran_dust_gen
-- 生成圆环（示例函数）：/function firework:effects/ring/poz
+- 生成随机闪光：/function firework:run/ran_flash_10
+- 生成随机颜色 dust：/function firework:run/ran_dust
+- 生成圆环（示例函数）：/function firework:effects/ring/math
 
 ## 自定义要点（快速说明）
 
