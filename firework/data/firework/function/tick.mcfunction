@@ -3,4 +3,4 @@ function firework:tick/rainbow_tail
 function firework:tick/rainbow_fallingblock
 
 #test
-execute as @e[type=armor_stand,tag=poz] at @s run particle end_rod ~ ~ ~
+#execute as @e[type=armor_stand,tag=poz] at @s run particle end_rod ~ ~ ~
