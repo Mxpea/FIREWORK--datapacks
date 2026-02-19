@@ -14,6 +14,8 @@
 - 粒子与像素字／方块生成：参见像素生成 [`firework:pixel_square/pixel_gen`](firework/data/firework/function/pixel_square/pixel_gen.mcfunction) 与字母集合（示例：[`firework:letters/a`](firework/data/firework/function/letters/a.mcfunction)）。
 - 下落方块彩色效果：参见 [`firework:effects/ran_falling_block/ran_fallingblock_gen`](firework/data/firework/function/effects/ran_falling_block/ran_fallingblock_gen.mcfunction) 以及相关函数 [`fallingblock_summon.mcfunction`](firework/data/firework/function/effects/ran_falling_block/fallingblock_summon.mcfunction) 和 [`colorful_color_gen.mcfunction`](firework/data/firework/function/effects/ran_falling_block/colorful_color_gen.mcfunction)。
 - 坐标/环形排列工具：参见 [`firework:effects/ring/math`](firework/data/firework/function/effects/ring/math.mcfunction) 与 [`firework:effects/ring/poz`](firework/data/firework/function/effects/ring/poz.mcfunction)。
+- 像素文字与方块绘制：pixel_square/pixel_gen、pixel_square/size_default；letters/ 下包含 0–9、a–z 及 extra。
+- 其他工具函数与演示：run/colord_block_exp、run/rainbow、tick/*（rainbow_fallingblock、rainbow_tail）等。
 
 ## 快速使用指南
 
