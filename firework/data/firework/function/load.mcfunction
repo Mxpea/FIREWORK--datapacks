@@ -4,7 +4,6 @@ execute unless score never_show firework_settings matches 1 run tellraw @a {text
 
 function firework:gu/zzz/load
 
-
 scoreboard objectives remove temp
 
 scoreboard objectives add firework_discount dummy
@@ -14,9 +13,8 @@ scoreboard objectives add C dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add rings dummy
 scoreboard objectives add ray_life dummy
-scoreboard objectives add ray_init dummy
+scoreboard objectives add ray_settings dummy
 
-scoreboard players set pokopoko firework_discount -1
 scoreboard players set @a firework_settings 0
 scoreboard players set R rainbow 0
 scoreboard players set G rainbow 0
@@ -27,6 +25,8 @@ scoreboard players set falling_block_type temp 0
 scoreboard players set steps rings -1
 scoreboard players set angle rings 0
 scoreboard players set distance rings 1
+scoreboard players set speed ray_settings -1
+scoreboard players set lifetime ray_settings -1
 
 scoreboard players set 31 C 31
 scoreboard players set -1 C -1
