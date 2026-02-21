@@ -5,6 +5,6 @@ execute unless score never_show_ray firework_settings matches 1 if score speed r
 execute if score speed ray_settings matches -1 run return fail
 execute if score lifetime ray_settings matches -1 run return fail
 
-execute store result storage firework:ray Speed float 0.01 run scoreboard players get speed ray_settings
+execute store result storage firework:ray Speed int 1 run scoreboard players get speed ray_settings
 execute store result storage firework:ray lifetime int 1 run scoreboard players get lifetime ray_settings
 function firework:ray/ray_gen with storage firework:ray
