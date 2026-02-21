@@ -68,4 +68,8 @@
 
 - 项目采用 MIT 许可（见 LICENSE）。
 
+## 鸣谢
+
+- 项目中UUID转换的代码（gu）来自[`gu（Github）`](https://github.com/gibbsly/gu)
+
 如需定制某个效果或示例命令位置，请指定要修改的函数文件（例如上文列举的某个路径），可直接在对应文件中编辑调用参数或 storage/scoreboard 初始值。
