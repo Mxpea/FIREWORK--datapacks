@@ -35,5 +35,5 @@ scoreboard players set 6 C 6
 scoreboard players set 360 C 360
 
 data modify storage firework:color tag set value ""
-data modify storage firework:ray Target set value ""
+data modify storage firework:ray UUID set value ""
 data modify storage firework:ray tag set value "NULL"
