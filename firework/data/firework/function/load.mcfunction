@@ -11,6 +11,8 @@ scoreboard objectives add firework_settings dummy
 scoreboard objectives add C dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add rings dummy
+scoreboard objectives add ray_life dummy
+scoreboard objectives add ray_init dummy
 
 scoreboard players set pokopoko firework_discount -1
 scoreboard players set @a firework_settings 0
@@ -31,3 +33,5 @@ scoreboard players set 6 C 6
 scoreboard players set 360 C 360
 
 data modify storage firework:color tag set value ""
+data modify storage firework:ray Target set value ""
+data modify storage firework:ray tag set value "NULL"
