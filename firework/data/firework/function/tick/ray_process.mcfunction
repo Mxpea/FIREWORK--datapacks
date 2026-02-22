@@ -5,4 +5,5 @@ execute store result storage firework:temp Speed float 0.01 run scoreboard playe
 
 
 #function firework:ray/ray_uuid_transform <-- 已废弃，将逐步删除
+function firework:ray/ray_step_target
 function firework:ray/ray_step_go with storage firework:temp

@@ -1,1 +1,1 @@
-$execute facing entity $(UUID) feet run tp @s ~ ~ ~ ~ ~
+execute facing entity @n[tag=target] feet run tp @s ~ ~ ~ ~ ~

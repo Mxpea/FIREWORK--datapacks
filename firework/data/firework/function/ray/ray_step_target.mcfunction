@@ -1,3 +1,5 @@
+
+#待删除
 $data modify storage firework:temp UUID insert 0 value $(UUID0)
 $data modify storage firework:temp UUID insert 1 value $(UUID1)
 $data modify storage firework:temp UUID insert 2 value $(UUID2)
