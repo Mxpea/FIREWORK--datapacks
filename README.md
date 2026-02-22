@@ -9,12 +9,22 @@
 
 ## 主要功能
 
-- 周期性彩虹 & 颜色生成：参见函数 [`firework:tick`](firework/data/firework/function/tick.mcfunction) 与 [`firework:effects/rainbow/rainbow_color_gen`](firework/data/firework/function/effects/rainbow/rainbow_color_gen.mcfunction)。
-- 随机烟花效果生成与召唤：参见 [`firework:run/ran_firework`](firework/data/firework/function/run/ran_firework.mcfunction) 及其子函数（如 [`firework:effects/fireworks_ran/ran_type`](firework/data/firework/function/effects/fireworks_ran/ran_type.mcfunction)）。
-- 粒子与像素字／方块生成：参见像素生成 [`firework:pixel_square/pixel_gen`](firework/data/firework/function/pixel_square/pixel_gen.mcfunction) 与字母集合（示例：[`firework:letters/a`](firework/data/firework/function/letters/a.mcfunction)）。
-- 下落方块彩色效果：参见 [`firework:effects/ran_falling_block/ran_fallingblock_gen`](firework/data/firework/function/effects/ran_falling_block/ran_fallingblock_gen.mcfunction) 以及相关函数 [`fallingblock_summon.mcfunction`](firework/data/firework/function/effects/ran_falling_block/fallingblock_summon.mcfunction) 和 [`colorful_color_gen.mcfunction`](firework/data/firework/function/effects/ran_falling_block/colorful_color_gen.mcfunction)。
-- 坐标/环形排列工具：参见 [`firework:effects/ring/math`](firework/data/firework/function/effects/ring/math.mcfunction) 与 [`firework:effects/ring/poz`](firework/data/firework/function/effects/ring/poz.mcfunction)。
-- 其他工具函数与演示：run/colord_block_exp、run/rainbow、tick/*（rainbow_fallingblock、rainbow_tail）等。
+- 颜色与彩虹循环
+  - 周期逻辑：[`firework:tick`](firework/data/firework/function/tick.mcfunction)
+  - 彩虹色生成：[`firework:effects/rainbow/rainbow_color_gen`](firework/data/firework/function/effects/rainbow/rainbow_color_gen.mcfunction)
+- 随机烟花生成
+  - 主入口：[`firework:run/ran_firework`](firework/data/firework/function/run/ran_firework.mcfunction)
+  - 子流程：目录 `effects/fireworks_ran/`（如 `ran_color`, `ran_color_fade`, `ran_trail`, `ran_twinkle`, `ran_firework_summon`, `ran_type`）
+- 粒子 / 像素 / 字符
+  - 像素生成：[`firework:pixel_square/pixel_gen`](firework/data/firework/function/pixel_square/pixel_gen.mcfunction)
+  - 默认尺寸：[`firework:pixel_square/size_default`](firework/data/firework/function/pixel_square/size_default.mcfunction)
+  - 字符集合：目录 `letters/`（示例：[`firework:letters/a`](firework/data/firework/function/letters/a.mcfunction)）
+- 下落方块与环形排布
+  - 下落方块：[`firework:effects/ran_falling_block/ran_fallingblock_gen`](firework/data/firework/function/effects/ran_falling_block/ran_fallingblock_gen.mcfunction)
+  - 环形工具：[`firework:effects/ring/math`](firework/data/firework/function/effects/ring/math.mcfunction)、[`firework:effects/ring/poz`](firework/data/firework/function/effects/ring/poz.mcfunction)
+- 射线与工具支持
+  - 射线流程：目录 `ray/`（`ray_gen`, `ray_step_facing`, `ray_step_go`, `ray_step_target`, `ray_uuid_transform`）
+  - UUID 工具：[`firework:gu/convert`](firework/data/firework/function/gu/convert.mcfunction)、[`firework:gu/generate`](firework/data/firework/function/gu/generate.mcfunction)、[`firework:tools/uuid_get`](firework/data/firework/function/tools/uuid_get.mcfunction)
 
 ## 快速使用指南
 
@@ -36,9 +46,19 @@
   - [firework/data/minecraft/tags/function/load.json](firework/data/minecraft/tags/function/load.json) — 注册 load
   - [`firework:tick`](firework/data/firework/function/tick.mcfunction) — 周期处理
   - [firework/data/minecraft/tags/function/tick.json](firework/data/minecraft/tags/function/tick.json) — 注册 tick
-- 粒子 / 色彩生成：[`firework:effects/randon_color_gen`](firework/data/firework/function/effects/randon_color_gen.mcfunction), [`firework:effects/ran_dust_gen`](firework/data/firework/function/effects/ran_dust_gen.mcfunction)
-- 烟花生成：[`firework:run/ran_firework`](firework/data/firework/function/run/ran_firework.mcfunction) 与子函数（目录：firework/data/firework/function/effects/fireworks_ran/）
-- 字母/像素：目录 firework/data/firework/function/letters/（示例：[`firework:letters/a`](firework/data/firework/function/letters/a.mcfunction)）与像素生成器 [`firework:pixel_square/pixel_gen`](firework/data/firework/function/pixel_square/pixel_gen.mcfunction)
+- 运行入口（常用）：
+  - [`firework:run/ran_firework`](firework/data/firework/function/run/ran_firework.mcfunction)
+  - [`firework:run/ran_flash_10`](firework/data/firework/function/run/ran_flash_10.mcfunction)
+  - [`firework:run/ran_dust`](firework/data/firework/function/run/ran_dust.mcfunction)
+  - [`firework:run/rainbow`](firework/data/firework/function/run/rainbow.mcfunction)
+  - [`firework:run/ring_normal`](firework/data/firework/function/run/ring_normal.mcfunction)
+  - [`firework:run/ring_rainbow`](firework/data/firework/function/run/ring_rainbow.mcfunction)
+  - [`firework:run/ray_summon`](firework/data/firework/function/run/ray_summon.mcfunction)
+- 关键子目录：
+  - 随机烟花参数：`effects/fireworks_ran/`
+  - 射线处理：`ray/`
+  - 字符集：`letters/`
+  - UUID 工具：`gu/` 与 [`firework:tools/uuid_get`](firework/data/firework/function/tools/uuid_get.mcfunction)
 
 ## 示例命令（快速上手）
 
@@ -47,7 +67,12 @@
 - 绘制字母 A：/function firework:letters/a
 - 生成随机闪光：/function firework:run/ran_flash_10
 - 生成随机颜色 dust：/function firework:run/ran_dust
-- 生成圆环（示例函数）：/function firework:effects/ring/math
+- 生成彩虹效果：/function firework:run/rainbow
+- 生成普通圆环：/function firework:run/ring_normal
+- 生成彩虹圆环：/function firework:run/ring_rainbow
+- 生成射线效果：/function firework:run/ray_summon
+- UUID 生成（工具）：/function firework:gu/generate
+- UUID 读取（工具）：/function firework:tools/uuid_get
 
 ## 自定义要点（快速说明）
 
