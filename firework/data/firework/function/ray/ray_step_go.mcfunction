@@ -1,1 +1,1 @@
-$tp @s ^ ^ ^$(Speed)
+$tp @s ^$(offset_x) ^$(offset_y) ^$(Speed)

@@ -1,1 +1,1 @@
-$execute facing entity @n[tag=target] feet run tp @s ~ ~ ~ ~$(offset_x) ~$(offset_y)
+execute facing entity @n[tag=target] feet run tp @s ~ ~ ~ ~ ~
