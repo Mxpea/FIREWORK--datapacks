@@ -9,5 +9,5 @@ data modify storage firework:ray UUID set from entity @s UUID
 
 function firework:gu/convert with storage firework:ray
 
-execute unless score uuid_feedback firework_settings matches 1 run tellraw @a [{text:"已选中UUID: ",color:"yellow"},{storage: "firework:ray",nbt: UUID,color: "aqua"},{text:" 记得手动清除",color: "yellow"}]
+execute unless score uuid_feedback firework_settings matches 1 run tellraw @a [{text:"已选中UUID: ",color:"yellow"},{storage: "firework:ray",nbt: UUID,color: "aqua"},{text:" [点击此处取消选择]",color: "gold",click_event: {action: "run_command",command:"/function firework:tools/uuid_reset"}}]
 execute unless score uuid_feedback firework_settings matches 1 run tellraw @a [{text:"[点击此处不再显示]",color:"gray",click_event:{action: "run_command",command:"/scoreboard players set uuid_feedback firework_settings 1"}}]
