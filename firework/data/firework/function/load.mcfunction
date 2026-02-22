@@ -15,6 +15,9 @@ scoreboard objectives add rings dummy
 scoreboard objectives add ray_life dummy
 scoreboard objectives add ray_settings dummy
 scoreboard objectives add ray_speed dummy
+scoreboard objectives add firework_uuid.1 dummy
+scoreboard objectives add firework_uuid.2 dummy
+scoreboard objectives add firework_uuid.3 dummy
 
 scoreboard players set @a firework_settings 0
 scoreboard players set R rainbow 0

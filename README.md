@@ -70,6 +70,8 @@
 
 ## 鸣谢
 
-- 项目中UUID转换的代码（gu）来自[`gu（Github）`](https://github.com/gibbsly/gu)
+本项目包含了来自 [gu] 的代码（用于UUID转换），该代码原采用 The Unlicense 发布。
+根据其条款，我们将此部分代码以 MIT 许可证重新分发。
+原始版权声明及许可证文本请参考：[`LICENSE`](https://github.com/gibbsly/gu/blob/main/LICENSE)
 
 如需定制某个效果或示例命令位置，请指定要修改的函数文件（例如上文列举的某个路径），可直接在对应文件中编辑调用参数或 storage/scoreboard 初始值。
