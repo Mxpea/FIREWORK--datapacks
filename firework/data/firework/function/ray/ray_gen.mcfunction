@@ -5,8 +5,4 @@ $scoreboard players set @n[type=armor_stand,tag=ray] ray_speed $(Speed)
 $scoreboard players set @n[type=armor_stand,tag=ray] firework_ray.offset_x $(offset_x)
 $scoreboard players set @n[type=armor_stand,tag=ray] firework_ray.offset_y $(offset_y)
 
-#scoreboard players operation @n[type=armor_stand,tag=ray] firework_uuid.0 = UUID0 firework_uuid.temp 待删除
-#scoreboard players operation @n[type=armor_stand,tag=ray] firework_uuid.1 = UUID1 firework_uuid.temp
-#scoreboard players operation @n[type=armor_stand,tag=ray] firework_uuid.2 = UUID2 firework_uuid.temp
-#scoreboard players operation @n[type=armor_stand,tag=ray] firework_uuid.3 = UUID3 firework_uuid.temp
 data modify storage firework:ray Target set value ""

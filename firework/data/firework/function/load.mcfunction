@@ -18,6 +18,9 @@ scoreboard objectives add ray_speed dummy
 scoreboard objectives add firework_ray.offset_x dummy
 scoreboard objectives add firework_ray.offset_y dummy
 scoreboard objectives add line dummy
+scoreboard objectives add line_length dummy
+scoreboard objectives add line_delta dummy
+scoreboard objectives add line_steps dummy
 scoreboard objectives add math dummy
 
 scoreboard players set @a firework_settings 0

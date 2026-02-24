@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {Tags:["line"],NoGravity:1b,Invisible:1b,Marker:1b}
