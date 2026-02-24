@@ -17,6 +17,8 @@ scoreboard objectives add ray_settings dummy
 scoreboard objectives add ray_speed dummy
 scoreboard objectives add firework_ray.offset_x dummy
 scoreboard objectives add firework_ray.offset_y dummy
+scoreboard objectives add line dummy
+scoreboard objectives add math dummy
 
 scoreboard players set @a firework_settings 0
 scoreboard players set R rainbow 0
@@ -38,6 +40,7 @@ scoreboard players set -1 C -1
 scoreboard players set 1000 C 1000
 scoreboard players set 6 C 6
 scoreboard players set 360 C 360
+scoreboard players set 2 C 2
 
 data modify storage firework:color tag set value ""
 data modify storage firework:ray UUID set value ""
