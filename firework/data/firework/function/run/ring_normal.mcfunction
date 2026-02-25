@@ -1,3 +1,3 @@
+data modify storage firework:ring command set value "particle minecraft:end_rod"
 function firework:effects/ring/math
-execute as @e[type=armor_stand,tag=poz] at @s run particle end_rod
 kill @e[type=armor_stand,tag=poz]
