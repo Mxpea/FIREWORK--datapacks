@@ -38,8 +38,7 @@
 ## 快速开始
 
 1. 将 `firework/` 放入世界目录 `datapacks/`。
-2. 进入世界后执行 `/reload`。
-3. 运行任意入口函数测试效果（见下方示例命令）。
+2. 运行任意入口函数测试效果（见下方示例命令）。
 
 > 说明：[`firework:load`](firework/data/firework/function/load.mcfunction) 会初始化大量计分板（如 `rings`、`ray_settings`、`line` 等）与 storage 键。
 
