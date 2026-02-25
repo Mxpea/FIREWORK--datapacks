@@ -1,7 +1,3 @@
-#execute store result score UUID.0 firework_uuid.temp run data get entity @s UUID[0]
-#execute store result score UUID.1 firework_uuid.temp run data get entity @s UUID[1]
-#execute store result score UUID.2 firework_uuid.temp run data get entity @s UUID[2]
-#execute store result score UUID.3 firework_uuid.temp run data get entity @s UUID[3]
 
 #used for whole data pack
 data modify storage firework:ray UUID set from entity @s UUID
