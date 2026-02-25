@@ -49,3 +49,6 @@ scoreboard players set 2 C 2
 data modify storage firework:color tag set value ""
 data modify storage firework:ray UUID set value ""
 data modify storage firework:ray tag set value "NULL"
+data modify storage firework:line poz_x set value ""
+data modify storage firework:line poz_y set value ""
+data modify storage firework:line poz_z set value ""
