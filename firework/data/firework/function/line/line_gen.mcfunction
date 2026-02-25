@@ -1,1 +1,2 @@
-summon armor_stand ~ ~ ~ {Tags:["line"],NoGravity:1b,Invisible:1b,Marker:1b}
+summon armor_stand ~ ~ ~ {Tags:["line","start_line"],NoGravity:1b,Invisible:1b,Marker:1b}
+execute as @n[tag=start_line,type=armor_stand] at @s run function firework:line/line_process with storage firework:line

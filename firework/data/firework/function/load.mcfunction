@@ -37,6 +37,7 @@ scoreboard players set speed ray_settings -1
 scoreboard players set lifetime ray_settings -1
 scoreboard players set offset_x ray_settings 0
 scoreboard players set offset_y ray_settings 0
+scoreboard players set steps line -1
 
 scoreboard players set 31 C 31
 scoreboard players set -1 C -1

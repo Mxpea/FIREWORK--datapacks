@@ -5,9 +5,33 @@ execute store result score sr_temp.1 math run data get storage firework:math sr_
 
 scoreboard players operation sr_temp.1 math /= 2 C
 
- #迭代10次
+ #迭代15次
 scoreboard players set sr_temp.0 math 2
-#scoreboard players operation sr_temp.0 math /= sr_temp.1 math
+scoreboard players operation sr_temp.1 math += sr_temp.0 math
+scoreboard players operation sr_temp.1 math /= 2 C
+scoreboard players operation sr_temp.0 math = sr_input math
+
+scoreboard players operation sr_temp.0 math /= sr_temp.1 math
+scoreboard players operation sr_temp.1 math += sr_temp.0 math
+scoreboard players operation sr_temp.1 math /= 2 C
+scoreboard players operation sr_temp.0 math = sr_input math
+
+scoreboard players operation sr_temp.0 math /= sr_temp.1 math
+scoreboard players operation sr_temp.1 math += sr_temp.0 math
+scoreboard players operation sr_temp.1 math /= 2 C
+scoreboard players operation sr_temp.0 math = sr_input math
+
+scoreboard players operation sr_temp.0 math /= sr_temp.1 math
+scoreboard players operation sr_temp.1 math += sr_temp.0 math
+scoreboard players operation sr_temp.1 math /= 2 C
+scoreboard players operation sr_temp.0 math = sr_input math
+
+scoreboard players operation sr_temp.0 math /= sr_temp.1 math
+scoreboard players operation sr_temp.1 math += sr_temp.0 math
+scoreboard players operation sr_temp.1 math /= 2 C
+scoreboard players operation sr_temp.0 math = sr_input math
+
+scoreboard players operation sr_temp.0 math /= sr_temp.1 math
 scoreboard players operation sr_temp.1 math += sr_temp.0 math
 scoreboard players operation sr_temp.1 math /= 2 C
 scoreboard players operation sr_temp.0 math = sr_input math
