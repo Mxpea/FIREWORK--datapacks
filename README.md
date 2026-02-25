@@ -74,7 +74,7 @@
 
 ## 依赖说明
 
-- 本仓库包含 `Mxpea.s.Motion.API.V1.3.1/`。其中部分彩色下落方块效果（如 [`firework:run/colord_block_exp`](firework/data/firework/function/run/colord_block_exp.mcfunction)）依赖该 API。
+- 本不包含 `Mxpea.s.Motion.API`。其中部分彩色下落方块效果（如 [`firework:run/colord_block_exp`](firework/data/firework/function/run/colord_block_exp.mcfunction)）依赖[该 API](https://github.com/Mxpea/Mxpea-s-Multiplayer-Motion-API)。
 
 ## 常见问题
 
@@ -88,5 +88,3 @@
 ## 鸣谢
 
 - 项目包含来自 [gu](https://github.com/gibbsly/gu) 的 UUID 相关代码，原始许可证为 The Unlicense；本项目按其条款进行再分发。
-
-如需继续补充“新增内容”，可直接告知要加入的命令、函数路径或效果截图位置。
