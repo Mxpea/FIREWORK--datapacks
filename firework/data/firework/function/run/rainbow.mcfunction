@@ -1,3 +1,4 @@
+# 彩虹粒子入口：先取颜色，再按 storage 参数生成
 function firework:effects/rainbow/ranbow_color_get
 #data modify storage firework:temp count set value 1
 #data modify storage firework:temp pixel_size set value 0

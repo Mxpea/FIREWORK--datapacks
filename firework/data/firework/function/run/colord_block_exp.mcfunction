@@ -1,7 +1,9 @@
 #need mmmapi
+# 随机方块爆炸入口：选择方块类型并多次生成下落方块
 data modify storage firework:color tag set value "random_exp"
 function firework:effects/ran_falling_block/ran_block_type
 
+# 多批次生成/召唤，形成扩散爆炸观感
 function firework:effects/ran_falling_block/ran_fallingblock_gen
 function firework:effects/ran_falling_block/fallingblock_summon with storage firework:color
 function firework:effects/ran_falling_block/ran_fallingblock_gen
