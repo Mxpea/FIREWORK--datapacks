@@ -1,3 +1,7 @@
+#写在前面：
+#1.如果你要在你自己的datapack里面使用该datapack的功能，请不要调用/run下的函数，而是参照其中的写法自行调用（参考/example文件夹下的调用）
+#除此之外，强烈建议您在动手调用之前手动在游戏中运行一下/run里面的函数，这能帮助你更好地理解它们的运行机制
+
 execute unless score never_show firework_settings matches 1 run function firework:letters/extra
 execute unless score never_show firework_settings matches 1 run tellraw @a [{"text": "FIREWORK! ","color":"gold",bold: true,italic: true},{"text": "datapack","color":"green"},{"text": " by ","color":"white"},{"text": "Aurelith/Mxpea","color":"yellow"},{"text": " | ","color":"white"},{"text": "[Github]","color":"aqua", click_event:{action: "open_url",url: "https://github.com/Mxpea/FIREWORK--datapacks"}}]
 execute unless score never_show firework_settings matches 1 run tellraw @a {text:"[点击这里不再显示]",color:"gray",click_event:{action: "run_command",command:"/scoreboard players set never_show firework_settings 1"}}
