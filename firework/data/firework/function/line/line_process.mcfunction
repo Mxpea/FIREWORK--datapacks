@@ -24,7 +24,6 @@ execute store result storage firework:line line_length float 0.001 run scoreboar
 
 scoreboard players operation @s line_steps = steps line
 scoreboard players operation length1 line_length = length line_length
-#function firework:line/line_step with storage firework:line
 $execute as @s at @s facing $(poz_x) $(poz_y) $(poz_z) run tp @s ~ ~ ~ ~ ~
 function firework:line/line_step with storage firework:line
 tag @s remove start_line

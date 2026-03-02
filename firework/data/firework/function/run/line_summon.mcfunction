@@ -3,6 +3,5 @@ execute unless score never_show_line firework_settings matches 1 run tellraw @a 
 execute unless score never_show_line firework_settings matches 1 if score steps line matches -1 run tellraw @a [{text:"[点击此处不再显示]",color:"gray",click_event:{action: "run_command",command:"/scoreboard players set never_show_line firework_settings 1"}}]
 execute if score steps line matches -1 run return fail
 
-#execute store result storage firework:line steps int 1 run scoreboard players get steps line
 data modify storage firework:line command set value "particle end_rod ~ ~ ~"
 function firework:line/line_gen
