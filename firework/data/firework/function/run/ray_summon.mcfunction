@@ -14,4 +14,8 @@ execute store result storage firework:ray Speed int 1 run scoreboard players get
 execute store result storage firework:ray lifetime int 1 run scoreboard players get lifetime ray_settings
 execute store result storage firework:ray offset_x int 1 run scoreboard players get offset_x ray_settings
 execute store result storage firework:ray offset_y int 1 run scoreboard players get offset_y ray_settings
+
+#传入运行命令
+data modify storage firework:ray command set value "particle end_rod"
+
 function firework:ray/ray_gen with storage firework:ray
