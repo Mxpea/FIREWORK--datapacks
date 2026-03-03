@@ -1,7 +1,6 @@
 execute if score steps rings matches ..0 run return fail
 
-scoreboard players operation angle rings = 360 C
-scoreboard players operation angle rings *= 1000 C
+scoreboard players set angle rings 360000
 scoreboard players operation angle rings /= steps rings
 scoreboard players operation distance1 rings = distance rings
 scoreboard players operation distance1 rings *= 1000 C

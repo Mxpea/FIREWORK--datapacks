@@ -44,12 +44,13 @@ scoreboard players set lifetime ray_settings -1
 scoreboard players set offset_x ray_settings 0
 scoreboard players set offset_y ray_settings 0
 scoreboard players set steps line -1
+scoreboard players set steps ball -1
+scoreboard players set distance ball -1
 
 scoreboard players set 31 C 31
 scoreboard players set -1 C -1
 scoreboard players set 1000 C 1000
 scoreboard players set 6 C 6
-scoreboard players set 360 C 360
 scoreboard players set 2 C 2
 
 data modify storage firework:color tag set value ""
