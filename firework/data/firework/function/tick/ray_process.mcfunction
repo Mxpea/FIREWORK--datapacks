@@ -7,6 +7,5 @@ execute store result storage firework:temp offset_x float 0.01 run scoreboard pl
 execute store result storage firework:temp offset_y float 0.01 run scoreboard players get @s firework_ray.offset_y
 
 
-#function firework:ray/ray_uuid_transform <-- 已废弃，将逐步删除
 function firework:ray/ray_step_facing
 function firework:ray/ray_step_go with storage firework:temp
