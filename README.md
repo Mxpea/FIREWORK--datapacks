@@ -30,6 +30,10 @@
   - 射线：[`firework:run/ray_summon`](firework/data/firework/function/run/ray_summon.mcfunction)
   - 线段：[`firework:run/line_summon`](firework/data/firework/function/run/line_summon.mcfunction)
 
+- 球形粒子
+  - 球形入口：[`firework:run/ball_summon`](firework/data/firework/function/run/ball_summon.mcfunction)
+  - 计算流程：[`ball/`](firework/data/firework/function/ball)
+
 - 其他效果与工具
   - 彩色下落方块爆散：[`firework:run/colord_block_exp`](firework/data/firework/function/run/colord_block_exp.mcfunction)
   - UUID 工具：[`firework:gu/generate`](firework/data/firework/function/gu/generate.mcfunction)、[`firework:gu/convert`](firework/data/firework/function/gu/convert.mcfunction)、[`firework:tools/uuid_get`](firework/data/firework/function/tools/uuid_get.mcfunction)
@@ -52,6 +56,7 @@
 - `/function firework:run/ring_rainbow`：以彩虹粒子生成圆环。
 - `/function firework:run/ray_summon`：生成射线效果（需先设置速度/寿命等参数）。
 - `/function firework:run/line_summon`：根据起止点与步数绘制线段粒子。
+- `/function firework:run/ball_summon`：按球半径与层数生成球形粒子。
 - `/function firework:run/colord_block_exp`：生成彩色下落方块爆散效果（依赖 Motion API）。
 - `/function firework:letters/a`：绘制字母 A 的像素图案。
 - `/function firework:gu/generate`：生成 UUID 数据并写入相关存储。
@@ -60,6 +65,7 @@
 ## 参数设置提示（常用）
 
 - 环形效果依赖：`steps rings`、`distance rings`。
+- 球形效果依赖：`steps ball`、`distance ball`（`distance ball` 为球半径；当前实现按缩放写入 storage 以便更精细控制）。
 - 射线效果依赖：`speed ray_settings`、`lifetime ray_settings`、`offset_x ray_settings`、`offset_y ray_settings`。
 - 线段效果依赖：`steps line`，并可通过 `tag @s add set_poz` 记录终点坐标。
 
@@ -68,6 +74,7 @@
 - 入口函数目录：[run/](firework/data/firework/function/run)
 - 烟花参数目录：[effects/fireworks_ran/](firework/data/firework/function/effects/fireworks_ran)
 - 环形计算目录：[effects/ring/](firework/data/firework/function/effects/ring)
+- 球形目录：[ball/](firework/data/firework/function/ball)
 - 射线目录：[ray/](firework/data/firework/function/ray)
 - 线段目录：[line/](firework/data/firework/function/line)
 - 字母目录：[letters/](firework/data/firework/function/letters)
@@ -80,6 +87,7 @@
 
 - `/function` 无反应：确认 datapack 路径正确并执行 `/reload`，检查 [load.json](firework/data/minecraft/tags/function/load.json) 与 [tick.json](firework/data/minecraft/tags/function/tick.json) 是否存在。
 - 射线 / 线段不执行：先设置必要计分板参数（见上方“参数设置提示”）。
+- 球形效果无输出：检查 `steps ball` 是否大于 0，并确认 `distance ball` 为合理范围的数值。
 
 ## 许可证
 
