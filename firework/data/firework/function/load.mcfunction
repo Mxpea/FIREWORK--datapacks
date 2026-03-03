@@ -26,6 +26,8 @@ scoreboard objectives add line_length dummy
 scoreboard objectives add line_delta dummy
 scoreboard objectives add line_steps dummy
 scoreboard objectives add math dummy
+scoreboard objectives add ball dummy
+#scoreboard objectives add ball_angle dummy
 
 scoreboard players set @a firework_settings 0
 scoreboard players set R rainbow 0
