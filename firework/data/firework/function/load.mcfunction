@@ -3,7 +3,7 @@
 #除此之外，强烈建议您在动手调用之前手动在游戏中运行一下/run里面的函数，这能帮助你更好地理解它们的运行机制
 
 execute unless score never_show firework_settings matches 1 run function firework:letters/extra
-execute unless score never_show firework_settings matches 1 run tellraw @a [{"text": "FIREWORK! ","color":"gold",bold: true,italic: true},{"text": "datapack","color":"green"},{"text": " by ","color":"white"},{"text": "Aurelith/Mxpea","color":"yellow"},{"text": " | ","color":"white"},{"text": "[Github]","color":"aqua", click_event:{action: "open_url",url: "https://github.com/Mxpea/FIREWORK--datapacks"}}]
+execute unless score never_show firework_settings matches 1 run tellraw @a [{"text": "FIREWORK! ","color":"gold",bold: true,italic: true},{"text": "datapack","color":"green",italic: false},{"text": " by ","color":"white",italic: false},{"text": "Aurelith/Mxpea","color":"yellow",italic: false},{"text": " | ","color":"white",italic: false},{"text": "[Github] ",italic: false,"color":"gray", click_event:{action: "open_url",url: "https://github.com/Mxpea/FIREWORK--datapacks"}},{"text": "[Modrinth]","color":"green",italic: false, click_event:{action: "open_url",url: "https://modrinth.com/project/sRXMN8LC"}}]
 execute unless score never_show firework_settings matches 1 run tellraw @a {text:"[点击这里不再显示]",color:"gray",click_event:{action: "run_command",command:"/scoreboard players set never_show firework_settings 1"}}
 
 function firework:gu/zzz/load
@@ -28,6 +28,8 @@ scoreboard objectives add line_steps dummy
 scoreboard objectives add math dummy
 scoreboard objectives add ball dummy
 #scoreboard objectives add ball_angle dummy
+scoreboard objectives add lightning dummy
+scoreboard objectives add lig_poz dummy
 
 scoreboard players set @a firework_settings 0
 scoreboard players set R rainbow 0
@@ -46,6 +48,10 @@ scoreboard players set offset_y ray_settings 0
 scoreboard players set steps line -1
 scoreboard players set steps ball -1
 scoreboard players set distance ball -1
+scoreboard players set maxstep lightning 2000
+scoreboard players set attrack lightning -1
+scoreboard players set stepl lightning -1
+scoreboard players set delta lightning -1
 
 scoreboard players set 31 C 31
 scoreboard players set -1 C -1

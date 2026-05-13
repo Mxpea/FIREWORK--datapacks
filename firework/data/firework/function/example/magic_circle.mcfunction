@@ -20,7 +20,7 @@ execute as @e[type=armor_stand,tag=mag_center] at @s run tp @s ~ ~ ~ ~72 ~
 
 scoreboard players set steps line 100
 
-data modify storage firework:line command set value "function firework:run/ran_dust"
+data modify storage firework:line command set value "function firework:run/rainbow"
 execute as @e[type=armor_stand,tag=mag_1] at @s run function firework:tools/poz_get
 execute as @e[type=armor_stand,tag=mag_4] at @s run function firework:line/line_gen
 
