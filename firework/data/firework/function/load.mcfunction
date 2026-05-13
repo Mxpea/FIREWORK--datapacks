@@ -28,6 +28,8 @@ scoreboard objectives add line_steps dummy
 scoreboard objectives add math dummy
 scoreboard objectives add ball dummy
 #scoreboard objectives add ball_angle dummy
+scoreboard objectives add lightning dummy
+scoreboard objectives add lig_poz dummy
 
 scoreboard players set @a firework_settings 0
 scoreboard players set R rainbow 0
@@ -46,6 +48,10 @@ scoreboard players set offset_y ray_settings 0
 scoreboard players set steps line -1
 scoreboard players set steps ball -1
 scoreboard players set distance ball -1
+scoreboard players set maxstep lightning 2000
+scoreboard players set attrack lightning -1
+scoreboard players set stepl lightning -1
+scoreboard players set delta lightning -1
 
 scoreboard players set 31 C 31
 scoreboard players set -1 C -1
