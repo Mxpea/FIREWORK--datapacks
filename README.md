@@ -30,6 +30,10 @@
   - 射线：[`firework:run/ray_summon`](firework/data/firework/function/run/ray_summon.mcfunction)
   - 线段：[`firework:run/line_summon`](firework/data/firework/function/run/line_summon.mcfunction)
 
+- 闪电效果
+  - 闪电入口：[`firework:run/lightning_summon`](firework/data/firework/function/run/lightning_summon.mcfunction)
+  - 计算流程：[`lightning/`](firework/data/firework/function/lightning)
+
 - 球形粒子
   - 球形入口：[`firework:run/ball_summon`](firework/data/firework/function/run/ball_summon.mcfunction)
   - 计算流程：[`ball/`](firework/data/firework/function/ball)
@@ -56,6 +60,7 @@
 - `/function firework:run/ring_rainbow`：以彩虹粒子生成圆环。
 - `/function firework:run/ray_summon`：生成射线效果（需先设置速度/寿命等参数）。
 - `/function firework:run/line_summon`：根据起止点与步数绘制线段粒子。
+- `/function firework:run/lightning_summon`：生成闪电效果（需先设置吸引强度/步长等参数）。
 - `/function firework:run/ball_summon`：按球半径与层数生成球形粒子。
 - `/function firework:run/colord_block_exp`：生成彩色下落方块爆散效果（依赖 Motion API）。
 - `/function firework:letters/a`：绘制字母 A 的像素图案。
@@ -68,6 +73,7 @@
 - 球形效果依赖：`steps ball`、`distance ball`（`distance ball` 为球半径；当前实现按缩放写入 storage 以便更精细控制）。
 - 射线效果依赖：`speed ray_settings`、`lifetime ray_settings`、`offset_x ray_settings`、`offset_y ray_settings`。
 - 线段效果依赖：`steps line`，并可通过 `tag @s add set_poz` 记录终点坐标。
+- 闪电效果依赖：`attrack lightning`、`stepl lightning`、`delta lightning`、`maxstep lightning`，并通过 `tag @s add set_poz` 记录终点坐标。
 
 ## 目录索引
 
@@ -77,6 +83,7 @@
 - 球形目录：[ball/](firework/data/firework/function/ball)
 - 射线目录：[ray/](firework/data/firework/function/ray)
 - 线段目录：[line/](firework/data/firework/function/line)
+- 闪电目录：[lightning/](firework/data/firework/function/lightning)
 - 字母目录：[letters/](firework/data/firework/function/letters)
 
 ## 依赖说明
