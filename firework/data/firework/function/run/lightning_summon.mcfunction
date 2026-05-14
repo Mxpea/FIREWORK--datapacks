@@ -1,5 +1,5 @@
 #必须参数:attrack/stepl/delta
-# 如果吸引强度过可能导致无法正常收敛，推荐吸引强度>步长
+# 如果吸引强度过低可能导致无法正常收敛，推荐吸引强度>步长
 execute unless score never_lig firework_settings matches 1 if score attrack lightning matches -1 run tellraw @a [{text:"你没有设置吸引强度 此处数据*0.01  ",color:"red"},{text:"[点击此处设置]",color:"aqua",click_event:{action: "suggest_command",command:"/scoreboard players set attrack lightning "}}]
 execute unless score never_lig firework_settings matches 1 if score stepl lightning matches -1 run tellraw @a [{text:"你没有设置步长 此处数据*0.01  ",color:"red"},{text:"[点击此处设置]",color:"aqua",click_event:{action: "suggest_command",command:"/scoreboard players set stepl lightning "}}]
 execute unless score never_lig firework_settings matches 1 if score delta lightning matches -1 run tellraw @a [{text:"你没有设置随机范围 此处不变  ",color:"red"},{text:"[点击此处设置]",color:"aqua",click_event:{action: "suggest_command",command:"/scoreboard players set delta lightning "}}]
