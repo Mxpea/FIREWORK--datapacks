@@ -74,7 +74,7 @@
 - 球形效果依赖：`steps ball`、`distance ball`（`distance ball` 为球半径；当前实现按缩放写入 storage 以便更精细控制）。
 - 射线效果依赖：`speed ray_settings`、`lifetime ray_settings`、`offset_x ray_settings`、`offset_y ray_settings`。
 - 线段效果依赖：`steps line`，并可通过 `tag @s add set_poz` 记录终点坐标。
-- 闪电效果依赖：`attrack lightning`、`stepl lightning`、`delta lightning`、`maxstep lightning`，并通过 `tag @s add set_poz` 记录终点坐标。
+- 闪电效果依赖：`attrack lightning`、`stepl lightning`、`delta lightning`、`maxstep lightning`，并通过 `tag @s add set_poz` 记录终点坐标。推荐吸引吸引强度>=步长。
 
 ## 目录索引
 
