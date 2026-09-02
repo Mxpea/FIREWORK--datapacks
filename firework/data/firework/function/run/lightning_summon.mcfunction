@@ -9,5 +9,5 @@ execute unless score never_lig firework_settings matches 1 run tellraw @a [{text
 execute if score attrack lightning matches -1 run return fail
 execute if score stepl lightning matches -1 run return fail
 
-data modify storage firework:lig command set value "particle minecraft:end_rod ~ ~ ~ 0.01 0.01 0.01 0.01 1 force"
+data modify storage firework:lig command set value "particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force"
 function firework:lightning/lig_prep with storage firework:lig
