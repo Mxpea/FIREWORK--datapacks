@@ -1,1 +1,1 @@
-$particle dust{color:[$(rainbow_R), $(rainbow_G), $(rainbow_B)],scale:1.5} ~ ~ ~ 0.1 0.1 0.1 0 3 force
+$particle dust{color:[$(rainbow_R), $(rainbow_G), $(rainbow_B)],scale:1.5} ~ ~ ~ 0.01 0.01 0.01 0 3 force
